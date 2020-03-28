@@ -7,35 +7,20 @@
 package problem1.node;
 
 public class TreeNode {
-    private TreeNode left;
-    private TreeNode right;
-    private int data;
-    private TreeNode next;
+    private int key;
+    private TreeNode left, right;
 
-    // Parameterized Constructor
-    public TreeNode(TreeNode left, TreeNode right, int data) {
-        this.left = left;
-        this.right = right;
-        this.data = data;
-        next = null;
+    public TreeNode(int item) {
+        key = item;
+        left = right = null;
     }
 
-    //default constructor
-    public TreeNode() {
-        this.left = null;
-        this.right = null;
-        this.data = 0;
-        next = null;
+    public int getKey() {
+        return key;
     }
 
-
-    public TreeNode getNext() {
-        return next;
-    }
-
-    // Getter & Setter Methods
-    public void setNext(TreeNode next) {
-        this.next = next;
+    public void setKey(int key) {
+        this.key = key;
     }
 
     public TreeNode getLeft() {
@@ -52,13 +37,5 @@ public class TreeNode {
 
     public void setRight(TreeNode right) {
         this.right = right;
-    }
-
-    public int getData() {
-        return data;
-    }
-
-    public void setData(int data) {
-        this.data = data;
     }
 }
