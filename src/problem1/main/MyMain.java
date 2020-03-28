@@ -41,6 +41,14 @@ public class MyMain {
                    / \    / \
                   1   3  5   7
 
+        * Input :> 4
+                   2
+                   6
+                   1
+                   3
+                   5
+                   7
+
         *
         */
 

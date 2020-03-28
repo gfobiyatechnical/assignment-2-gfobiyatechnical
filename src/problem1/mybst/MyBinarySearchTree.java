@@ -24,9 +24,10 @@ public class MyBinarySearchTree {
         if (root == null) {
             return;
         }
-        preOrderString.append(root.getKey() + " ");
+
         preOrder(root.getLeft());
         preOrder(root.getRight());
+        preOrderString.append(root.getKey() + " ");
     }
 
     public void add(final int value) {
