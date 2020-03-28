@@ -24,7 +24,12 @@ public class MyMain {
         int i = 7;
         System.out.println("Please take only 7 inputs ...");
         while (i > 0) {
-            tree.add(scanner.nextInt());
+            try {
+                tree.add(scanner.nextInt());
+            } catch (Exception x) {
+                System.out.println("You Entered invalid no. ... you are kicked :) ");
+                break;
+            }
             i--;
         }
 
@@ -32,7 +37,7 @@ public class MyMain {
          *   Running Pre-Order and Post-Order Traversals
          */
 
-        tree.preOrder(tree.root);
+        MyBinarySearchTree.preOrder(tree.root);
         System.out.println();
         tree.postOrder(tree.root);
 

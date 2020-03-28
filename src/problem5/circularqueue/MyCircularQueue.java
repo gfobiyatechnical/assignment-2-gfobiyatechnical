@@ -59,12 +59,6 @@ public class MyCircularQueue {
 
     }
 
-    /*
-     helper method to get-Size of Queue
-     */
-    public int getSize() {
-        return size;
-    }
 
     /*
      Helper method : to print Queue

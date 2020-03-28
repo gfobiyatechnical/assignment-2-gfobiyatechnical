@@ -19,10 +19,6 @@ public class TreeNode {
         return key;
     }
 
-    public void setKey(int key) {
-        this.key = key;
-    }
-
     public TreeNode getLeft() {
         return left;
     }

@@ -55,13 +55,6 @@ public class MyPriorityQueue {
     }
 
     /*
-    for getting size of Queue
-     */
-    public int getSize() {
-        return size;
-    }
-
-    /*
     helper method : to print the Queue
      */
     public void printQueue() {

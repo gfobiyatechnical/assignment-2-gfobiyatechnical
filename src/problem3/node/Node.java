@@ -27,9 +27,6 @@ public class Node {
         return student;
     }
 
-    public void setData(Student student) {
-        this.student = student;
-    }
 
     public Node getNext() {
         return next;

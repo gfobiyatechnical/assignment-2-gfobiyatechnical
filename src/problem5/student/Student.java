@@ -32,32 +32,14 @@ public class Student {
         return rollNumber;
     }
 
-    public void setRollNumber(int rollNumber) {
-        this.rollNumber = rollNumber;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
 
     public int getBackLogCounter() {
         return backLogCounter;
     }
 
-    public void setBackLogCounter(int backLogCounter) {
-        this.backLogCounter = backLogCounter;
-    }
 
     public int getAppearingCounter() {
         return appearingCounter;
-    }
-
-    public void setAppearingCounter(int appearingCounter) {
-        this.appearingCounter = appearingCounter;
     }
 
 

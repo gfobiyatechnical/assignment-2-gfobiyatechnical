@@ -26,7 +26,8 @@ public class MyMain {
             try {
                 tree.add(scanner.nextInt());
             } catch (Exception e) {
-                System.out.println("Error Occurred is " + e + " \n");
+                System.out.println("Error Occurred is \" " + e + " \", so you are going to be kicked-out \n");
+                break;
             }
             i--;
         }

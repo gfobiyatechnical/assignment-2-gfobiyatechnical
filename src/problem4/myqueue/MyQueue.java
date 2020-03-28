@@ -29,9 +29,9 @@ public class MyQueue {
     }
 
     public void preSuccessor(TreeNode root) {
-        if (root == null) {
-            System.out.println(" Ops !!  Empty");
-        } else {
+        if (root == null)
+            return;
+        else {
             enqueue(root.getKey());
             preSuccessor(root.getLeft());
             preSuccessor(root.getRight());
