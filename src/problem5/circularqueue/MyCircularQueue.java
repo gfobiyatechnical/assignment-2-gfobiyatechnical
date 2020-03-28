@@ -11,7 +11,9 @@ import problem5.student.Student;
 
 import java.util.ArrayList;
 
-//implementation of  circular queue
+/*
+ *   implementation of  circular queue
+ */
 public class MyCircularQueue {
     private Node front;
     private int size;
@@ -22,7 +24,9 @@ public class MyCircularQueue {
         size = 0;
     }
 
-    // Helper Method : enQueue
+    /*
+     *  Helper Method : enQueue
+     */
     public void enqueue(ArrayList<Student> addData) {
         for (Student s : addData
         ) {
@@ -46,19 +50,25 @@ public class MyCircularQueue {
                 }
             } else {
 
-                // Message-display in case of invalid Student Data
+                /*
+                 Message-display in case of invalid Student Data
+                 */
                 System.out.println("Given Data is not Valid");
             }
         }
 
     }
 
-    // helper method to get-Size of Queue
+    /*
+     helper method to get-Size of Queue
+     */
     public int getSize() {
         return size;
     }
 
-    // Helper method : to print Queue
+    /*
+     Helper method : to print Queue
+     */
     public void printQueue() {
         Node temp = this.front;
         for (int i = 0; i < this.size; i++) {
