@@ -19,14 +19,14 @@ public class MyBinarySearchTree {
     private TreeNode newnode;
     private TreeNode root;
     private TreeNode temp;
-    private int ctr;
+    private int count;
     Queue<Integer> queue;
 
     // Default Constructor
     public MyBinarySearchTree() {
         temp = null;
         root = null;
-        ctr = 0;
+        count = 0;
         queue = new LinkedList<>();
     }
 
@@ -66,7 +66,7 @@ public class MyBinarySearchTree {
                     tempRoot.setLeft(newnode);
                     System.out.println("Node inserted at Left");
                     queue.add(newnode.getData());
-                    ctr--;
+                    count--;
                     newnode = null;
                     return;
                 } else {
@@ -82,7 +82,7 @@ public class MyBinarySearchTree {
                 if (tempRoot.getRight() == null) {
                     tempRoot.setRight(newnode);
                     System.out.println("Node inserted at Right");
-                    ctr++;
+                    count++;
                     newnode = null;
                 } else {
                     System.out.println("Right not empty changing tmproot");
@@ -93,5 +93,11 @@ public class MyBinarySearchTree {
         }
     }
 
+    // Helper method for printing Left-child as per required
+    public void printLeftChildren() {
+        System.out.println("The left children of inserted nodes of Binary search tree are :");
+        System.out.println(queue.toString());
+        System.out.println("Number of Nodes not having left children" + count);
+    }
 
 }
