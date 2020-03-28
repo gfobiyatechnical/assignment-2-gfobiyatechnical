@@ -21,8 +21,7 @@ public class MyQueue {
         Node ns = new Node();
         ns.setData(data);
         if (front == null) {
-            front = ns;
-            rear = ns;
+            front = rear = ns;
         } else {
             rear.setNext(ns);
             rear = ns;
@@ -30,8 +29,9 @@ public class MyQueue {
     }
 
     public void preSuccessor(TreeNode root) {
-        if (root == null) return;
-        else {
+        if (root == null) {
+            System.out.println(" Ops !!  Empty");
+        } else {
             enqueue(root.getKey());
             preSuccessor(root.getLeft());
             preSuccessor(root.getRight());
@@ -46,7 +46,7 @@ public class MyQueue {
         }
     }
 
-    class Node {
+    static class Node {
         int data;
         Node next;
 
