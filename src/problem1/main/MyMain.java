@@ -52,10 +52,15 @@ public class MyMain {
         *
         */
 
+        System.out.println("All Left-children are :");
+        tree.printLeftNode();
+        System.out.println("Number of nodes doesn't have left child :");
+        tree.countNotLeft();
 
 
         /*
-         * > For Only Left Children 4,2,1,5 should be printed , for that we call printLeftChild()
+         * > For Only Left Children 2,1,5 should be printed , for that we call printLeftNode()
+         * > For no. of node doesn't have left node 4 should be printed , for which we call countNotLeft()
          * > defined in MyBinarySearchTree.java
          *
          */
